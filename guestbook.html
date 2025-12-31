@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MINISO Collective — Review</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">M</span> MINISO Collective</a>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown"><a href="product.html">Product ▾</a></li>
+          <li><a href="store.html">Stores</a></li>
+          <li><a href="promotions.html">Promotions</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-top">
+      <h1>Review</h1>
+      <p class="lead">Leave your feedback about our products or store experience. Your comment will be helped us to improve.</p>
+    </section>
+
+    <section class="guestbook-section">
+      <form id="guestForm" class="guest-form">
+        <label>
+          Name
+          <input type="text" id="gName" required placeholder="Your name">
+        </label>
+        <label>
+          Product (optional)
+          <input type="text" id="gProduct" placeholder="Product name or collection">
+        </label>
+        <label>
+          Comment
+          <textarea id="gComment" rows="4" required placeholder="What did you like / what can improve?"></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Submit</button>
+          <button type="button" id="clearGuestbook" class="btn ghost">Clear All</button>
+        </div>
+      </form>
+
+      <div id="guestList" class="guest-list" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+  <script>
+    // guestbook wiring
+    document.addEventListener('DOMContentLoaded', () => {
+      Guestbook.init();
+    });
+  </script>
+</body>
+</html>

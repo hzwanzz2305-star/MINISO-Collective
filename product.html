@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="MINISO Collective — curated product collections, collaborations, and reviews (educational project).">
+  <title>MINISO Collective — Products</title>
+
+  <link rel="stylesheet" href="product_style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">M</span> MINISO Collective</a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li class="dropdown" aria-haspopup="true">
+            <button id="productDropdownBtn" class="dropdown-toggle" aria-expanded="false">Products ▾</button>
+            <ul id="productDropdownMenu" class="dropdown-menu" role="menu" aria-hidden="true">
+              <li role="none"><a role="menuitem" href="#collections">Collections</a></li>
+              <li role="none"><a role="menuitem" href="collab.html">Collaboration</a></li>
+            </ul>
+          </li>
+
+          <li><a href="store.html">Stores</a></li>
+          <li><a href="promotions.html">Promotions</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="btn-icon" aria-pressed="false" title="Toggle dark mode">🌙</button>
+        <button id="mobileMenuBtn" class="mobile-menu-btn" aria-expanded="false" aria-controls="mobileNav">☰</button>
+      </div>
+    </div>
+
+    <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="store.html">Stores</a></li>
+        <li><a href="promotions.html">Promotions</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- PAGE TITLE -->
+  <main role="main">
+  <section class="page-hero container">
+    <h1>Our Product Collections</h1>
+    <p class="lead">A curated selection of everyday essentials, accessories and limited collaborations. Click a product to view details and leave a review.</p>
+  </section>
+
+  <!-- SEARCH + FILTERS -->
+  <section class="product-controls container" id="controls">
+    <input type="text" id="searchBar" placeholder="Search products..." aria-label="Search products">
+
+    <div class="filters" role="tablist" aria-label="Product categories">
+      <button class="tag-btn active" data-tag="all">All</button>
+      <button class="tag-btn" data-tag="Blindbox">Blindbox</button>
+      <button class="tag-btn" data-tag="toys">Toys</button>
+      <button class="tag-btn" data-tag="accessories">Accessories</button>
+      <!-- <button class="tag-btn" data-tag="collab">Collab</button> -->
+    </div>
+  </section>
+
+  <!-- PRODUCT GRID -->
+  <section class="product-grid container" id="collections" aria-live="polite">
+    <!-- 12 product tiles -->
+    <article class="product-card" tabindex="0" role="article" aria-label="Friendsheep - Cute Animal Sheep Blind Box, RM69.90" data-name="Friendsheep - Cute Animal Sheep Blind Box" data-price="RM69.90" data-tag="Blindbox" data-desc="Dopamine-coloured meow meow design, super-eye catching on hanging bag." data-img="Pic_14.jpg">
+      <img src="Pic_14.jpg" alt="Friendsheep - Cute Animal Sheep Blind Box">
+      <h3>Friendsheep - Cute Animal Sheep Blind Box</h3>
+      <p class="price">RM69.90</p>
+      <button class="view-btn">View Details</button>
+    </article>
+
+    <article class="product-card" tabindex="0" role="article" aria-label="Keeno Mysterious Treasure Blind, RM59.90" data-name="Keeno Mysterious Treasure Blind" data-price="RM12.90" data-tag="Blindbox" data-desc="Mysterious treasure blind box with surprise contents." data-img="Pic_15.jpg">
+      <img src="Pic_15.jpg" alt="Keeno Mysterious Treasure Blind">
+      <h3>Keeno Mysterious Treasure Blind</h3>
+      <p class="price">RM59.90</p>
+      <button class="view-btn">View Details</button>
+    </article>
+
+    <article class="product-card" tabindex="0" role="article" aria-label="Nick Wilde Car Plush Toy, RM45.00" data-name="Nick Wilde Car Plush Toy" data-price="RM45.00" data-tag="toys" data-desc="Limited edition collaboration plush with embroidered details." data-img="Pic_16.jpg">
+      <img src="Pic_16.jpg" alt="Nick Wilde Car Plush Toy">
+      <h3>Nick Wilde Car Plush Toy</h3>
+      <p class="price">RM45.00</p>
+      <button class="view-btn">View Details</button>
+    </article>
+
+    <article class="product-card" tabindex="0" role="article" aria-label="Judy Hopps Handbag, RM49.90" data-name="Judy Hopps Handbag" data-price="RM49.90" data-tag="accessories" data-desc="Portable mini speaker with clear audio for small rooms." data-img="Pic_17.jpg">
+      <img src="Pic_17.jpg" alt="Judy Hopps Handbag">
+      <h3>Judy Hopps Handbag</h3>
+      <p class="price">RM49.90</p>
+      <button class="view-btn">View Details</button>
+    </article>
+
+    <article class="product-card" tabindex="0" role="article" aria-label="Judy Hopps Car Plush Toy, RM45.00" data-name="Judy Hopps Car Plush Toy" data-price="RM45.00" data-tag="toys" data-desc="Limited edition collaboration plush with embroidered details." data-img="Pic_18.jpg">
+      <img src="Pic_18.jpg" alt="Judy Hopps Car Plush Toy">
+      <h3>Judy Hopps Car Plush Toy</h3>
+      <p class="price">RM45.00</p>
+      <button class="view-btn">View Details</button>
+    </article>
+
+    <article class="product-card" tabindex="0" role="article" aria-label="Autumn Garden Blind Box, RM38.90" data-name="Autumn Garden Blind Box" data-price="RM38.90" data-tag="Blindbox" data-desc="Two-piece ceramic mug set with minimalist design." data-img="Pic_19.jpg">
+      <img src="Pic_19.jpg" alt="Autumn Garden Blind Box">
+      <h3>Autumn Garden Blind Box</h3>
+      <p class="price">RM38.90</p>
+      <button class="view-btn">View Details</button>
+    </article>
+
+    <article class="product-card" tabindex="0" role="article" aria-label="Zootopia Pawsicle Plush, RM72.90" data-name="Zootopia Pawsicle Plush" data-price="RM72.90" data-tag="toys" data-desc="Soft plush pawsicle toy for kids and collectors." data-img="Pic_9.jpg">
+      <img src="Pic_9.jpg" alt="Zootopia Pawsicle Plush">
+      <h3>Zootopia Pawsicle Plush</h3>
+      <p class="price">RM72.90</p>
+      <button class="view-btn">View Details</button>
+    </article>
+
+    <article class="product-card" tabindex="0" role="article" aria-label="Judy Hopps Plushie, RM39.00" data-name="Judy Hopps Plushie" data-price="RM39.00" data-tag="toys" data-desc="Soft plush Judy Hopps plushie for kids and collectors." data-img="Pic_8.jpg">
+      <img src="Pic_8.jpg" alt="Judy Hopps Plushie">
+      <h3>Judy Hopps Plushie</h3>
+      <p class="price">RM39.00</p>
+      <button class="view-btn">View Details</button>
+    </article>
+
+    <article class="product-card" tabindex="0" role="article" aria-label="Stitch Plushie Blind Box, RM65.90" data-name="Stitch Plushie Blind Box" data-price="RM65.90" data-tag="Blindbox" data-desc="Soft plush Stitch blind box for kids and collectors." data-img="Pic_5.jpg">
+      <img src="Pic_5.jpg" alt="Stitch Plushie Blind Box">
+      <h3>Stitch Plushie Blind Box</h3>
+      <p class="price">RM65.90</p>
+      <button class="view-btn">View Details</button>
+    </article>
+
+    <article class="product-card" tabindex="0" role="article" aria-label="Stitch Gen Z Street Blind Box, RM75.90" data-name="Stitch Gen Z Street Blind Box" data-price="RM75.90" data-tag="Blindbox" data-desc="Soft plush Stitch blind box for kids and collectors." data-img="Pic_1.jpg">
+      <img src="Pic_1.jpg" alt="Stitch Gen Z Street Blind Box">
+      <h3>Stitch Gen Z Street Blind Box</h3>
+      <p class="price">RM75.90</p>
+      <button class="view-btn">View Details</button>
+    </article>
+
+    <article class="product-card" tabindex="0" role="article" aria-label="Judy Hopps Comb, RM25.00" data-name="Judy Hopps Comb" data-price="RM25.00" data-tag="accessories" data-desc="Collectible items from our collaboration series." data-img="Pic_26.jpeg">
+      <img src="Pic_26.jpeg" alt="Judy Hopps Comb">
+      <h3>Judy Hopps Comb</h3>
+      <p class="price">RM25.00</p>
+      <button class="view-btn">View Details</button>
+    </article>
+
+    <article class="product-card" tabindex="0" role="article" aria-label="One Piece Water Tumbler, RM49.90" data-name="One Piece Water Tumbler" data-price="RM49.90" data-tag="accessories" data-desc="Cute enamel keychain charm." data-img="Pic_22.jpeg">
+      <img src="Pic_22.jpeg" alt="One Piece Water Tumbler">
+      <h3>One Piece Water Tumbler</h3>
+      <p class="price">RM49.90</p>
+      <button class="view-btn">View Details</button>
+    </article>
+  </section>
+
+  <!-- PRODUCT MODAL (View Details) -->
+  <div id="productModal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalName">
+      <button class="modal-close" aria-label="Close details">&times;</button>
+
+      <div class="modal-body">
+        <div class="modal-image">
+          <img id="modalImg" src="" alt="Product Image">
+        </div>
+
+        <div class="modal-info">
+          <h2 id="modalName"></h2>
+          <p id="modalPrice" class="price"></p>
+          <p id="modalDesc" class="desc"></p>
+
+          <div class="meta">
+            <div class="rating" aria-hidden="true">★★★★☆</div>
+            <div class="sku muted">SKU: <span id="modalSKU">—</span></div>
+          </div>
+
+          <!-- <p class="muted small">Free returns within 14 days • Ships in 1–3 business days</p> -->
+        </div>
+      </div>
+
+      <div class="modal-comments">
+        <h3>Reviews</h3>
+
+        <form id="modalCommentForm">
+          <input type="text" id="modalCommentName" placeholder="Your name" required>
+          <textarea id="modalCommentText" placeholder="Your review..." required></textarea>
+          <button type="submit" class="btn">Submit Review</button>
+        </form>
+
+        <div id="modalCommentList" class="comment-list" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+  </main>
+
+  <p id="noResults" class="muted container" style="display:none;text-align:center;margin-top:12px">No products match your search.</p>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>MINISO Collective</h4>
+        <p>Design-forward lifestyle merchandise and curated collaborations.</p>
+      </div>
+
+      <div>
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="collab.html">Collaboration</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Contact</h5>
+        <p>contact@minisocollective.com.my</p>
+        <small>© MINISO Collective</small>
+      </div>
+    </div>
+
+    <p class="edu-text">For educational and assignment purpose only</p>
+  </footer>
+
+  <script src="product_main.js"></script>
+</body>
+</html>

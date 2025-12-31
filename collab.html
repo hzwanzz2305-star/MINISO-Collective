@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MINISO Collective — Collaboration</title>
+  <link rel="stylesheet" href="collab_style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">M</span> MINISO Collective</a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li class="dropdown" aria-haspopup="true">
+            <button id="productDropdownBtn" class="dropdown-toggle" aria-expanded="false">Product ▾</button>
+            <ul id="productDropdownMenu" class="dropdown-menu" role="menu" aria-hidden="true">
+              <li role="none"><a role="menuitem" href="product.html#collections">Collections</a></li>
+              <li role="none"><a role="menuitem" href="collab.html">Collaboration</a></li>
+            </ul>
+          </li>
+
+          <li><a href="store.html">Stores</a></li>
+          <li><a href="promotions.html">Promotions</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="btn-icon" aria-pressed="false" title="Toggle dark mode">🌙</button>
+        <button id="mobileMenuBtn" class="mobile-menu-btn" aria-expanded="false" aria-controls="mobileNav">☰</button>
+      </div>
+    </div>
+
+    <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="store.html">Stores</a></li>
+        <li><a href="promotions.html">Promotions</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-top">
+      <h1>Collaborations</h1>
+      <p class="lead">Our special projects and designer partnerships — limited-run pieces and pop culture collabs.</p>
+    </section>
+
+    <section class="collab-grid">
+      <article class="soft-card animate-fade-up">
+        <div class="media"><img src="collab1.jpg" alt="Designer Series A"></div>
+        <div class="content">
+          <h3>Zootopia 2</h3>
+          <p class="muted">A capsule collection in collaboration with Studio M — minimalist homeware and accessories with handcrafted details.</p>
+          <p class="tag">Theme: Zootopia 2 Movie • Release: November 2025</p>
+        </div>
+      </article>
+
+      <article class="soft-card animate-fade-up">
+        <div class="media"><img src="collab2.jpg" alt="Pop Collab X"></div>
+        <div class="content">
+          <h3>Stitch</h3>
+          <p class="muted">Limited-run collectibles celebrating a beloved pop culture IP — playful figurines and themed stationery.</p>
+          <p class="tag">Theme: Movie Promotion • Release: Limited Edition</p>
+        </div>
+      </article>
+
+      <article class="soft-card animate-fade-up">
+        <div class="media"><img src="collab3.jpg" alt="Eco Lab Collaboration"></div>
+        <div class="content">
+          <h3>One Piece</h3>
+          <p class="muted">Sustainable materials and low-waste production — reusable daily essentials co-designed with Eco Lab.</p>
+          <p class="tag">Theme: Anime Promotion • Release: Ongoing</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="collab_main.js"></script>
+</body>
+</html>

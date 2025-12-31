@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="MINISO Collective — curated everyday essentials, design-forward products, and collaborations (educational project).">
+  <title>MINISO Collective — Home</title>
+
+  <!-- main stylesheet (put in same folder or css/style.css and update href) -->
+  <link rel="stylesheet" href="index_style.css">
+
+  <!-- Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">M</span> MINISO Collective</a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li class="dropdown" aria-haspopup="true">
+            <button class="dropdown-toggle" aria-expanded="false">Product ▾</button>
+            <ul class="dropdown-menu" role="menu" aria-hidden="true">
+              <li role="none"><a role="menuitem" href="product.html#collections">Collections</a></li>
+              <li role="none"><a role="menuitem" href="collab.html">Collaboration</a></li>
+            </ul>
+          </li>
+
+          <li><a href="store.html">Stores</a></li>
+          <li><a href="promotions.html">Promotions</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="btn-icon" aria-pressed="false" title="Toggle dark mode">🌙</button>
+        <button id="mobileMenuBtn" class="mobile-menu-btn" aria-expanded="false" aria-controls="mobileNav">☰</button>
+      </div>
+    </div>
+
+    <!-- MOBILE NAV (hidden on desktop) -->
+    <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="store.html">Stores</a></li>
+        <li><a href="promotions.html">Promotions</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- SLIDESHOW HERO -->
+  <section class="slideshow" aria-label="Featured slides">
+    <div class="slides-container">
+      <img class="slide active" src="Pic_12.jpg" alt="Slide 1 - Featured products" role="listitem">
+      <img class="slide" src="Pic_11.jpg" alt="Slide 2 - New collection" role="listitem">
+      <img class="slide" src="Pic_20.jpeg" alt="Slide 3 - Collaboration feature" role="listitem">
+      <img class="slide" src="Pic_13.jpg" alt="Slide 4 - Limited edition" role="listitem">
+    </div>
+
+    <button class="slide-btn prev" aria-label="Previous slide">❮</button>
+    <button class="slide-btn next" aria-label="Next slide">❯</button>
+
+    <div class="slide-dots"></div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main role="main">
+    <section class="hero container animate-fade-up">
+      <h1>Welcome to MINISO Collective</h1>
+      <p class="lead">Discover curated everyday essentials, limited collaborations, and design-forward products that inspire.</p>
+    </section>
+
+    <!-- QUICK ACCESS BUTTONS -->
+    <section class="quick-access container animate-fade-up">
+      <a class="quick-btn" href="product.html">
+        <span class="icon">🛍️</span>
+        <h3>Explore Collections</h3>
+        <p>Browse our curated product lineup</p>
+      </a>
+      <a class="quick-btn" href="store.html">
+        <span class="icon">📍</span>
+        <h3>Store Locations</h3>
+        <p>Find MINISO near you</p>
+      </a>
+      <a class="quick-btn" href="promotions.html">
+        <span class="icon">🎉</span>
+        <h3>Promotions</h3>
+        <p>Check out limited-time deals</p>
+      </a>
+    </section>
+
+    <section class="features container animate-fade-up">
+      <article class="card feature-card">
+        <h3>Premium Curation</h3>
+        <p>Products selected with quality, minimal design, and everyday utility in mind.</p>
+      </article>
+
+      <article class="card feature-card">
+        <h3>Collaborations</h3>
+        <p>Limited collections with designers and popular IP — check the Collaboration tab.</p>
+      </article>
+
+      <article class="card feature-card">
+        <h3>Visit Us</h3>
+        <p>Find outlets and pop-ups in your city. We update store info frequently.</p>
+      </article>
+    </section>
+
+    <section class="promo container animate-fade-up">
+      <div class="promo-card">
+        <h3>Ongoing Promotions</h3>
+        <p>Check our promotions page for limited-time deals and seasonal bundles.</p>
+        <a class="btn" href="promotions.html">See Promotions</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>MINISO Collective</h4>
+        <p>Design-forward lifestyle merchandise and curated collaborations.</p>
+      </div>
+
+      <div>
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="collab.html">Collaboration</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Contact</h5>
+        <p>contact@minisocollective.com.my</p>
+        <small>© MINISO Collective</small>
+      </div>
+    </div>
+
+    <p class="edu-text">For educational and assignment purpose only</p>
+  </footer>
+
+  
+
+  <!-- main javascript -->
+  <script src="index_main.js"></script>
+</body>
+</html>

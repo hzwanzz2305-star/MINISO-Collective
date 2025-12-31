@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="MINISO Collective Store Locations — Find your nearest store across Malaysia (educational project).">
+  <title>MINISO Collective — Store Locations</title>
+  <link rel="stylesheet" href="store_style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html"><span class="logo-mark">M</span> MINISO Collective</a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li class="dropdown" aria-haspopup="true">
+            <button id="productDropdownBtn" class="dropdown-toggle" aria-expanded="false">Products ▾</button>
+            <ul id="productDropdownMenu" class="dropdown-menu" role="menu" aria-hidden="true">
+              <li role="none"><a role="menuitem" href="product.html#collections">Collections</a></li>
+              <li role="none"><a role="menuitem" href="collab.html">Collaboration</a></li>
+            </ul>
+          </li>
+
+          <li><a href="store.html">Stores</a></li>
+          <li><a href="promotions.html">Promotions</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="btn-icon" aria-pressed="false" title="Toggle dark mode">🌙</button>
+        <button id="mobileMenuBtn" class="mobile-menu-btn" aria-expanded="false" aria-controls="mobileNav">☰</button>
+      </div>
+    </div>
+
+    <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="store.html">Stores</a></li>
+        <li><a href="promotions.html">Promotions</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main role="main">
+    <section class="page-hero container animate-fade-up">
+      <h1>Store Locations</h1>
+      <p class="lead">Discover MINISO Collective branches across Malaysia. Click on any pin to view store details and operation hours.</p>
+    </section>
+
+    <!-- INTERACTIVE MAP (All locations) -->
+    <section class="map-section container animate-fade-up">
+      <div class="map-wrapper">
+        <iframe id="googleMap" class="map-container" 
+          src="https://www.google.com/maps/d/u/0/embed?mid=1_BEEjpDo1u1zPrvdkzGKFMgx0yi2_hY&ehbc=2E312F" 
+          width="100%" 
+          height="600" 
+          style="border:0;border-radius:12px;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          aria-label="Google My Maps showing MINISO store locations across Malaysia">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Removed modal: store details are available in the static list below -->
+
+    <!-- STORES LIST -->
+    <section class="stores-list container animate-fade-up">
+      <h2>All Locations</h2>
+      <div class="stores-grid">
+        <article class="store-card">
+          <h3>KLCC Outlet</h3>
+          <p class="address">Lot GF-12, Suria KLCC, Kuala Lumpur</p>
+          <p class="hours">⏰ 10:00 AM – 10:00 PM</p>
+          
+        </article>
+
+        <article class="store-card">
+          <h3>Pavilion Mall</h3>
+          <p class="address">Lot L2-51, Pavilion KL, Kuala Lumpur</p>
+          <p class="hours">⏰ 10:00 AM – 10:00 PM</p>
+          
+        </article>
+
+        <article class="store-card">
+          <h3>Sunway Pyramid</h3>
+          <p class="address">Ground Floor, Sunway Pyramid, Selangor</p>
+          <p class="hours">⏰ 10:00 AM – 10:00 PM</p>
+          
+        </article>
+
+        <article class="store-card">
+          <h3>Johor Bahru</h3>
+          <p class="address">Level 2, City Square JB, Johor Bahru</p>
+          <p class="hours">⏰ 10:00 AM – 9:00 PM</p>
+          
+        </article>
+
+        <article class="store-card">
+          <h3>Penang</h3>
+          <p class="address">Gurney Plaza, Level 2, Penang</p>
+          <p class="hours">⏰ 10:00 AM – 10:00 PM</p>
+          
+        </article>
+
+        <article class="store-card">
+          <h3>Kota Kinabalu</h3>
+          <p class="address">The Mines Shopping Centre, Sabah</p>
+          <p class="hours">⏰ 10:00 AM – 9:00 PM</p>
+          
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>MINISO Collective</h4>
+        <p>Design-forward lifestyle merchandise and curated collaborations.</p>
+      </div>
+
+      <div>
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="store.html">Stores</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Contact</h5>
+        <p>contact@minisocollective.com.my</p>
+      </div>
+    </div>
+
+    <p class="edu-text">For educational and assignment purpose only</p>
+  </footer>
+
+  <script src="store_main.js"></script>
+</body>
+</html>
